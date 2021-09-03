@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="./styles/generator.css">
+  <script async src="./js/generator.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Password Generator</h1>
+    <h3>Generate random string</h3>
+  </header>
+
+  <main>
+    <textarea readonly rows="1">Click Generate</textarea>
+    <div>
+      <button type="button" id="generate">Generate!!</button>
+      <button type="button" id="copy">Copy</button>
+    </div>
+  </main>
+
+  <button id="show-more">Advanced options </button>
+  
+  <footer>
+
+    <span>
+      <label for="length">
+        String Length
+      </label>
+      <input type="number" id="length" value="12" max="64">
+    </span>
+
+    <span>
+      <label for="add-char">
+        Add characters
+        <i>
+          <input type="text" id="add-char" placeholder="One per">
+          <span></span>
+        </i>
+      </label>
+    </span>
+
+    <div id="custom-chars"></div>
+    
+  </footer>
+</body>
+</html>
